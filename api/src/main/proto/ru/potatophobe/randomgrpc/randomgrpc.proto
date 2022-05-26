@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package ru.potatophobe.randomgrpc;
+
+import "google/protobuf/empty.proto";
+
+option java_multiple_files = true;
+
+message Seed{
+  int64 value = 1;
+
+}
+
+message IntValue{
+  int32 value = 1;
+}
+
+service RandomService{
+  rpc RandomInt(google.protobuf.Empty) returns (IntValue);
+  rpc RandomIntFromSeed(Seed) returns (IntValue);
+}
