@@ -1,4 +1,4 @@
-## Sample gRPC Kotlin Spring service
+## gRPC Kotlin Spring sample
 
 ```protobuf
 syntax = "proto3";
