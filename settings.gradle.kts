@@ -1,7 +1,8 @@
 rootProject.name = "random-grpc"
 include("api")
-include("implementation")
 include("stub")
+include("implementation")
+include("client")
 
 pluginManagement {
     plugins {
